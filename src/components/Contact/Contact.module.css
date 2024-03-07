@@ -1,0 +1,12 @@
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.contactInfoItem {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
