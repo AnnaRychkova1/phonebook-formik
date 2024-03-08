@@ -6,22 +6,8 @@
 }
 
 .contactItem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 8px;
   border: 2px solid var(--primary-color);
   padding: 12px;
   width: 300px;
-}
-
-.deleteButton {
-  background-color: rgb(228, 227, 227);
-  color: var(--primary-color);
-  padding: 8px;
-  text-align: center;
-  border-radius: 4px;
-  font-size: 18px;
-  border: 2px solid var(--second-color);
-  height: 36px;
 }
