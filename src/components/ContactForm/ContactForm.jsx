@@ -9,8 +9,12 @@ const ContactsBoxSchema = Yup.object().shape({
     .max(50, 'Too long!')
     .required('Required!'),
   number: Yup.string()
-    .min(3, 'Too short!')
-    .max(50, 'Too long!')
+    .matches(/^\d{3}-\d{2}-\d{2}$/, {
+      message: 'Invalid number',
+      excludeEmptyString: false,
+    })
+    // .min(3, 'Too short!')
+    // .max(50, 'Too long!')
     .required('Required!'),
 });
 

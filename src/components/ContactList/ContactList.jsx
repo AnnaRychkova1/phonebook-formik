@@ -8,9 +8,10 @@ const ContactList = ({ contacts, onDelete }) => {
         return (
           <li className={css.contactItem} key={contact.id}>
             <Contact
-              name={contact.name}
-              number={contact.number}
-              id={contact.id}
+              {...contact}
+              // name={contact.name}
+              // number={contact.number}
+              // id={contact.id}
               onDelete={onDelete}
             />
           </li>
